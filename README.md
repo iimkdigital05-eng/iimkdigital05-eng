@@ -1,16 +1,33 @@
-## Hi there 👋
+# 👋 Bienvenue chez IIMk DIGITAL
 
-<!--
-**iimkdigital05-eng/iimkdigital05-eng** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Boutique digitale basée au Niger 🇳🇪 — formations, outils et ressources business en ligne.**
 
-Here are some ideas to get you started:
+Nous aidons les entrepreneurs francophones à démarrer et développer une activité en ligne grâce à des packs de formations pratiques (business, marketing digital, IA, e-commerce et plus).
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🛒 Notre boutique
+🔗 [eghqmtzl.mychariow.shop](https://eghqmtzl.mychariow.shop)
+
+### Produits phares
+- 🎁 **Pack 20 Formations Business & Digital + Bonus** (gratuit) — De 0 à Revenus en Ligne 🚀
+- 💼 **Pack 50 Formations Digitales** (5 000 XOF) — programme complet
+
+---
+
+## 🤝 Programme d'affiliation
+Gagnez **40% de commission** (700 XOF) sur chaque vente du Pack 50 Formations.
+👉 Rejoignez-nous via notre [boutique](https://eghqmtzl.mychariow.shop)
+
+---
+
+## 📱 Suivez-nous
+- TikTok : [@iimkdigital](https://vm.tiktok.com/ZS9Yo6UT5SWjH-emTZJ)
+- Instagram : [@iimkkdigital05](https://instagram.com/iimkkdigital05)
+- Facebook : [Page IIMk DIGITAL](https://facebook.com/share/1BTcNUZ4V1)
+- Telegram : [t.me/IIMkDIGITAL](https://t.me/IIMkDIGITAL)
+
+---
+
+## 📩 Contact
+✉️ iimkdigital05@gmail.com

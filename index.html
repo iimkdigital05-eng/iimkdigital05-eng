@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moubarak — IIMk DIGITAL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink:    #0e0e0e;
+    --paper:  #f5f2ec;
+    --accent: #1a6b4a;
+    --muted:  #6b6760;
+    --line:   #d4d0c8;
+    --card:   #ffffff;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 64px 24px 0;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(42px, 9vw, 76px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  h1 span {
+    color: var(--accent);
+  }
+
+  .tagline {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 440px;
+    line-height: 1.55;
+    border-left: 2px solid var(--accent);
+    padding-left: 16px;
+    margin-bottom: 40px;
+  }
+
+  /* ── BADGES ── */
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 56px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    background: var(--card);
+    text-decoration: none;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .badge:hover { border-color: var(--accent); color: var(--accent); }
+  .badge svg { width: 14px; height: 14px; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px;
+    border: none;
+    border-top: 1px solid var(--line);
+    margin-bottom: 48px;
+  }
+
+  /* ── SECTION ── */
+  section {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px;
+    margin-bottom: 56px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+
+  /* ── PROJECTS ── */
+  .projects { display: flex; flex-direction: column; gap: 1px; }
+
+  .project {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.15s;
+  }
+  .project:last-child { border-bottom: 1px solid var(--line); }
+  .project:hover { opacity: 0.7; }
+
+  .project-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 28px;
+    padding-top: 3px;
+  }
+
+  .project-body { flex: 1; }
+
+  .project-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .project-tag {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background: #e8f3ee;
+    color: var(--accent);
+    white-space: nowrap;
+    margin-top: 3px;
+  }
+  .project-tag.wip { background: #f0ede6; color: #8a7a5a; }
+
+  /* ── PRODUCTS ── */
+  .product-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .product-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 24px rgba(26,107,74,0.08);
+  }
+
+  .product-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .product-card p  { font-size: 13px; color: var(--muted); }
+
+  .product-arrow {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent);
+    transition: background 0.15s;
+  }
+  .product-card:hover .product-arrow { background: var(--accent); color: #fff; }
+
+  /* ── LINKS ── */
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--ink);
+    font-size: 14px;
+    font-weight: 500;
+    background: var(--card);
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .link-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .link-btn svg { width: 18px; height: 18px; color: var(--muted); flex-shrink: 0; }
+
+  /* ── FOOTER ── */
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  footer p { font-size: 13px; color: var(--muted); }
+  .dot { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    .links { grid-template-columns: 1fr; }
+    footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">IIMk DIGITAL · Niamey, Niger</p>
+  <h1>Moubarak<br><span>Boubacar.</span></h1>
+  <p class="tagline">Étudiant en médecine. Fondateur de IIMk DIGITAL. Je construis des outils IA pour la médecine et l'éducation en Afrique francophone.</p>
+  <div class="badges">
+    <span class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Médecine
+    </span>
+    <span class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      1–2h/jour
+    </span>
+    <span class="badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      Python · React · Claude API
+    </span>
+  </div>
+</header>
+
+<hr class="divider">
+
+<!-- PROJETS -->
+<section>
+  <p class="section-label">Projets en cours</p>
+  <div class="projects">
+
+    <a class="project" href="https://github.com/iimkdigital05-eng/IMK-Digital-Ecosystem" target="_blank">
+      <span class="project-num">01</span>
+      <div class="project-body">
+        <p class="project-title">MedJarvis</p>
+        <p class="project-desc">Assistant médical IA — fiches de révision, QCM, révisions espacées pour étudiants en médecine.</p>
+      </div>
+      <span class="project-tag wip">En cours</span>
+    </a>
+
+    <a class="project" href="https://github.com/iimkdigital05-eng/IMK-Digital-Ecosystem" target="_blank">
+      <span class="project-num">02</span>
+      <div class="project-body">
+        <p class="project-title">SmartCold</p>
+        <p class="project-desc">Gestion intelligente de conservateur médical — température, alertes, statistiques.</p>
+      </div>
+      <span class="project-tag wip">En cours</span>
+    </a>
+
+    <a class="project" href="https://github.com/iimkdigital05-eng/IMK-Digital-Ecosystem" target="_blank">
+      <span class="project-num">03</span>
+      <div class="project-body">
+        <p class="project-title">Chariow Academy</p>
+        <p class="project-desc">Ressources islamiques, formations digitales et bibliothèque PDF.</p>
+      </div>
+      <span class="project-tag wip">En cours</span>
+    </a>
+
+    <a class="project" href="https://github.com/iimkdigital05-eng/IMK-Digital-Ecosystem" target="_blank">
+      <span class="project-num">04</span>
+      <div class="project-body">
+        <p class="project-title">AI Workspace</p>
+        <p class="project-desc">Suite d'agents IA pour la recherche, la rédaction et l'analyse documentaire.</p>
+      </div>
+      <span class="project-tag wip">En cours</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- PRODUITS -->
+<section>
+  <p class="section-label">Formations disponibles</p>
+  <a class="product-card" href="https://eghqmtzl.mychariow.shop" target="_blank">
+    <div>
+      <h3>Pack 20 Formations Business &amp; Digital</h3>
+      <p>De 0 à revenus en ligne — ChatGPT, marketing, e-commerce, copywriting et plus.</p>
+    </div>
+    <div class="product-arrow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </a>
+</section>
+
+<!-- LIENS -->
+<section>
+  <p class="section-label">Me retrouver</p>
+  <div class="links">
+
+    <a class="link-btn" href="https://vm.tiktok.com/ZS9Yo6UT5SWjH-emTZJ" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.95a8.23 8.23 0 004.82 1.56V7.06a4.85 4.85 0 01-1.05-.37z"/></svg>
+      TikTok
+    </a>
+
+    <a class="link-btn" href="https://t.me/IIMkDIGITAL" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.14 14.06 4.18 13.16c-.643-.2-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.834.951z"/></svg>
+      Telegram
+    </a>
+
+    <a class="link-btn" href="https://instagram.com/iimkkdigital05" target="_blank">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+
+    <a class="link-btn" href="https://github.com/iimkdigital05-eng" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+      GitHub
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  <p>Moubarak <span class="dot">·</span> IIMk DIGITAL <span class="dot">·</span> Niamey, Niger</p>
+  <p>2026</p>
+</footer>
+
+</body>
+</html>

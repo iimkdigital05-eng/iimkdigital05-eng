@@ -1,33 +1,42 @@
-# 👋 Bienvenue chez IIMk DIGITAL
+# Moubarak — IIMk DIGITAL 👋
 
-**Boutique digitale basée au Niger 🇳🇪 — formations, outils et ressources business en ligne.**
-
-Nous aidons les entrepreneurs francophones à démarrer et développer une activité en ligne grâce à des packs de formations pratiques (business, marketing digital, IA, e-commerce et plus).
+Étudiant en médecine · Fondateur de [IIMk DIGITAL](https://eghqmtzl.mychariow.shop) · Niamey, Niger 🇳🇪
 
 ---
 
-## 🛒 Notre boutique
-🔗 [eghqmtzl.mychariow.shop](https://eghqmtzl.mychariow.shop)
+## 🚀 Ce que je construis
 
-### Produits phares
-- 🎁 **Pack 20 Formations Business & Digital + Bonus** (gratuit) — De 0 à Revenus en Ligne 🚀
-- 💼 **Pack 50 Formations Digitales** (5 000 XOF) — programme complet
-
----
-
-## 🤝 Programme d'affiliation
-Gagnez **40% de commission** (700 XOF) sur chaque vente du Pack 50 Formations.
-👉 Rejoignez-nous via notre [boutique](https://eghqmtzl.mychariow.shop)
+| Projet | Description | Statut |
+|--------|-------------|--------|
+| **MedJarvis** | Assistant médical IA — fiches, QCM, révisions espacées | 🔨 En cours |
+| **SmartCold** | Gestion intelligente de conservateur médical | 🔨 En cours |
+| **Chariow Academy** | Ressources islamiques & formations digitales | 🔨 En cours |
+| **AI Workspace** | Agents IA pour la recherche, la rédaction et l'analyse | 🔨 En cours |
 
 ---
 
-## 📱 Suivez-nous
-- TikTok : [@iimkdigital](https://vm.tiktok.com/ZS9Yo6UT5SWjH-emTZJ)
-- Instagram : [@iimkkdigital05](https://instagram.com/iimkkdigital05)
-- Facebook : [Page IIMk DIGITAL](https://facebook.com/share/1BTcNUZ4V1)
-- Telegram : [t.me/IIMkDIGITAL](https://t.me/IIMkDIGITAL)
+## 🛠️ Stack & outils
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)
+![Chariow](https://img.shields.io/badge/Chariow-Store-orange?style=flat)
 
 ---
 
-## 📩 Contact
-✉️ iimkdigital05@gmail.com
+## 📦 Produits disponibles
+
+- 🎓 **Pack 20 Formations Business & Digital** — [Voir le produit](https://eghqmtzl.mychariow.shop)
+
+---
+
+## 📫 Me retrouver
+
+[![TikTok](https://img.shields.io/badge/TikTok-IIMkDIGITAL-black?style=flat&logo=tiktok)](https://vm.tiktok.com/ZS9Yo6UT5SWjH-emTZJ)
+[![Telegram](https://img.shields.io/badge/Telegram-IIMkDIGITAL-2CA5E0?style=flat&logo=telegram)](https://t.me/IIMkDIGITAL)
+[![Instagram](https://img.shields.io/badge/Instagram-iimkkdigital05-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/iimkkdigital05)
+
+---
+
+> *« Construire des outils utiles, à impact, au service de la médecine et de l'éducation. »*
